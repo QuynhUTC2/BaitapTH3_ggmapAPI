@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Map API</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <b>Điểm đi: </b>
+      <select id="start">
+        <option value="2 Công xã Paris, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam " id="BuuDien">Bưu điện thành phố Hồ Chí Minh </option>
+        <option value="Văn miếu quốc tử giám, Văn Miếu, Đống Đa, Hà Nội " id="VanMieu">Văn miếu Quốc Tử Giám</option>
+      </select>
+      <b>Điểm đến: </b>
+      <select id="end">
+        <option value="2 Công xã Paris, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh, Việt Nam" id="BuuDien">Bưu điện thành phố Hồ Chí Minh </option>
+        <option value="Văn miếu quốc tử giám, Văn Miếu, Đống Đa, Hà Nội" id="VanMieu">Văn miếu Quốc Tử Giám</option>
+      </select>
+    </div>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNI_ZWPqvdS6r6gPVO50I4TlYkfkZdXh8&callback=initMap&libraries=geometry&v=weekly"
+      async
+    ></script>
+  </body>
+</htm
